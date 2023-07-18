@@ -58,7 +58,18 @@ class AbilityItem extends StatelessWidget {
             )
           ]
       ),
-      child: Image.asset('assets/images/$image.png'),
+      child: Container(
+        width: 30,
+          height: 30,
+          decoration: BoxDecoration(
+              boxShadow: [
+                BoxShadow(
+                  color: const Color(0xffdfd0ee).withOpacity(0.5),
+                  blurRadius: 12,
+                )
+              ]
+          ),
+          child: Image.asset('assets/images/$image.png')),
     );
   }
 }
