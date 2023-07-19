@@ -7,13 +7,13 @@ class TypeWidget extends CustomPainter {
     var colors = Offset.zero & size;
 
     var backGroundPaint = Paint()
-      ..shader = const LinearGradient(
+      ..shader = LinearGradient(
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
-          stops: [0.0, 0.4],
+          stops: const [0.0, 0.4],
           colors: [
-            Color(0xfff6ebff),
-            Color(0xffac53ff),
+            Colors.deepPurple.shade100,
+            Colors.deepPurple.shade300,
           ]).createShader(colors)
       ..style = PaintingStyle.fill
       ..strokeCap = StrokeCap.round

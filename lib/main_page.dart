@@ -24,7 +24,7 @@ class MainPage extends StatelessWidget {
           children: [
             const SizedBox(height: 30,),
             CharacterWindow(size: size),
-            SettingsWindow(size: size)
+            SettingsWindow()
           ],
         ),
       ),
